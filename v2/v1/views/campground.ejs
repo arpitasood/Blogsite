@@ -1,0 +1,17 @@
+<% include partials/header %>
+
+<h3 class =text-center>You selected: <%=campground[0].name%></h3>
+    <div class="container">
+        <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+                <div class="col-md-12 col-sm-6">
+                    <div class="thumbnail">
+                       <img src="<%= campground[0].image %>">
+                       <div class="caption">
+                           <h4><%= campground[0].name %></h4>
+                       </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+<% include partials/footer %>
